@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blind Auction</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Blind Auction Bidding</h1>
+        <form method="POST" action="/">
+            <label for="name">What is your name?:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="bid">What's your bid?:</label><br>
+            <input type="number" id="bid" name="bid" required><br><br>
+
+            <label for="more_bidders">Are there any other bidders? Type "yes" or "no":</label><br>
+            <select id="more_bidders" name="more_bidders" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
